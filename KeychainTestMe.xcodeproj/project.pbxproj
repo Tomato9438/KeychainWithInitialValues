@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70BA96EB25A7F749004DA697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA96EA25A7F749004DA697 /* AppDelegate.swift */; };
+		70BA96ED25A7F749004DA697 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA96EC25A7F749004DA697 /* SceneDelegate.swift */; };
+		70BA96EF25A7F749004DA697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA96EE25A7F749004DA697 /* ViewController.swift */; };
+		70BA96F225A7F749004DA697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BA96F025A7F749004DA697 /* Main.storyboard */; };
+		70BA96F425A7F74A004DA697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BA96F325A7F74A004DA697 /* Assets.xcassets */; };
+		70BA96F725A7F74A004DA697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BA96F525A7F74A004DA697 /* LaunchScreen.storyboard */; };
+		70BA970425A7F95D004DA697 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA970325A7F95D004DA697 /* KeychainService.swift */; };
+		70BA970725A7F9EF004DA697 /* SecureChains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA970625A7F9EF004DA697 /* SecureChains.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		70BA96E725A7F749004DA697 /* KeychainTestMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainTestMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BA96EA25A7F749004DA697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70BA96EC25A7F749004DA697 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70BA96EE25A7F749004DA697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70BA96F125A7F749004DA697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70BA96F325A7F74A004DA697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70BA96F625A7F74A004DA697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70BA96F825A7F74A004DA697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70BA970325A7F95D004DA697 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = Utils/KeychainService.swift; sourceTree = "<group>"; };
+		70BA970625A7F9EF004DA697 /* SecureChains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecureChains.swift; path = Utils/SecureChains.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70BA96E425A7F749004DA697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70BA96DE25A7F749004DA697 = {
+			isa = PBXGroup;
+			children = (
+				70BA96E925A7F749004DA697 /* KeychainTestMe */,
+				70BA96E825A7F749004DA697 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70BA96E825A7F749004DA697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70BA96E725A7F749004DA697 /* KeychainTestMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70BA96E925A7F749004DA697 /* KeychainTestMe */ = {
+			isa = PBXGroup;
+			children = (
+				70BA970225A7F93B004DA697 /* Utils */,
+				70BA96EA25A7F749004DA697 /* AppDelegate.swift */,
+				70BA96EC25A7F749004DA697 /* SceneDelegate.swift */,
+				70BA96EE25A7F749004DA697 /* ViewController.swift */,
+				70BA96F025A7F749004DA697 /* Main.storyboard */,
+				70BA96F325A7F74A004DA697 /* Assets.xcassets */,
+				70BA96F525A7F74A004DA697 /* LaunchScreen.storyboard */,
+				70BA96F825A7F74A004DA697 /* Info.plist */,
+			);
+			path = KeychainTestMe;
+			sourceTree = "<group>";
+		};
+		70BA970225A7F93B004DA697 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				70BA970325A7F95D004DA697 /* KeychainService.swift */,
+				70BA970625A7F9EF004DA697 /* SecureChains.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70BA96E625A7F749004DA697 /* KeychainTestMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70BA96FB25A7F74A004DA697 /* Build configuration list for PBXNativeTarget "KeychainTestMe" */;
+			buildPhases = (
+				70BA96E325A7F749004DA697 /* Sources */,
+				70BA96E425A7F749004DA697 /* Frameworks */,
+				70BA96E525A7F749004DA697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainTestMe;
+			productName = KeychainTestMe;
+			productReference = 70BA96E725A7F749004DA697 /* KeychainTestMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70BA96DF25A7F749004DA697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					70BA96E625A7F749004DA697 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 70BA96E225A7F749004DA697 /* Build configuration list for PBXProject "KeychainTestMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70BA96DE25A7F749004DA697;
+			productRefGroup = 70BA96E825A7F749004DA697 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70BA96E625A7F749004DA697 /* KeychainTestMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70BA96E525A7F749004DA697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BA96F725A7F74A004DA697 /* LaunchScreen.storyboard in Resources */,
+				70BA96F425A7F74A004DA697 /* Assets.xcassets in Resources */,
+				70BA96F225A7F749004DA697 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70BA96E325A7F749004DA697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BA970725A7F9EF004DA697 /* SecureChains.swift in Sources */,
+				70BA96EF25A7F749004DA697 /* ViewController.swift in Sources */,
+				70BA970425A7F95D004DA697 /* KeychainService.swift in Sources */,
+				70BA96EB25A7F749004DA697 /* AppDelegate.swift in Sources */,
+				70BA96ED25A7F749004DA697 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		70BA96F025A7F749004DA697 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70BA96F125A7F749004DA697 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70BA96F525A7F74A004DA697 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70BA96F625A7F74A004DA697 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70BA96F925A7F74A004DA697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70BA96FA25A7F74A004DA697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70BA96FC25A7F74A004DA697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10000;
+				DEVELOPMENT_TEAM = 9XNEX783H5;
+				INFOPLIST_FILE = KeychainTestMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mhvt.KeychainTestMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		70BA96FD25A7F74A004DA697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10000;
+				DEVELOPMENT_TEAM = 9XNEX783H5;
+				INFOPLIST_FILE = KeychainTestMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mhvt.KeychainTestMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70BA96E225A7F749004DA697 /* Build configuration list for PBXProject "KeychainTestMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BA96F925A7F74A004DA697 /* Debug */,
+				70BA96FA25A7F74A004DA697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70BA96FB25A7F74A004DA697 /* Build configuration list for PBXNativeTarget "KeychainTestMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BA96FC25A7F74A004DA697 /* Debug */,
+				70BA96FD25A7F74A004DA697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70BA96DF25A7F749004DA697 /* Project object */;
+}
